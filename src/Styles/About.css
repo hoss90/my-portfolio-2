@@ -1,0 +1,136 @@
+#about{
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-color: #256D85;
+    color: antiquewhite;
+}
+.about-text{
+    width: 60vh;
+    height: auto;
+    position: relative;
+    left:25vh;
+    top: 25vh;
+    text-align: left;
+    line-height:35px ;
+}
+
+.about-title{
+    position: relative;
+    font-family: serif;
+}
+.about-title::after{
+    content: "";
+      display: inline-block;
+      position: relative;
+      top: -42px;
+      width: 280px;
+      height: 1px;
+      margin-left: 100px;
+      background-color: #16213E
+  }
+.about-paragraph{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.profile-picture{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    left: 65vw;
+    top:-20vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.picture{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top:-10px;
+    left: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: sepia(100%);
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.picture:hover{
+    top:-20px;
+    left: 0px;
+    filter: none;
+}
+@media screen and (max-width: 950px) {
+    .about-text{
+        width: 40vh;
+        top: 20vh;
+        left: 15vh;
+    }
+    .about-title::after{
+          top: -10px;
+          width: 150px;
+          margin-left: 35px;
+          
+      }
+      .about-paragraph{
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+      .profile-picture{
+        width: 250px;
+        height: 250px;
+        display: block;
+        left: 40vw;
+        top:25vh;
+    }
+    .picture{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top:10px;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .about-text{
+        max-width: 100%;
+        top: 10vh;
+        left: 5vh;
+        line-height:25px ;
+    }
+    .about-title::after{
+          top: -10px;
+          width: 120px;
+          margin-left: 35px;
+          
+      }
+      .about-paragraph{
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+      .profile-picture{
+        width: 200px;
+        height: 200px;
+        display: block;
+        border: 1px solid black;
+        border-radius: 6px;
+        position: relative;
+        left: 25vw;
+        top:13vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .picture{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top:10px;
+        left: 10px;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        filter: sepia(100%);
+        transition: all 0.8s ease;
+        cursor: pointer;
+    }
+}

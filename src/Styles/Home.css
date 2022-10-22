@@ -1,0 +1,316 @@
+#home{
+    position: relative;
+    display: sticky;
+    top: 0vh;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    color: antiquewhite;
+    transition: all 1s ease;
+}
+.bubble{
+  position:fixed;
+  z-index: -9;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #256D85;
+  display: none;
+}
+.bubble:nth-child(1){
+  margin: 10vh 20vw;
+  display: block;
+  animation: animate 10s infinite ease;
+}
+.bubble:nth-child(2){
+  margin: 10vh 50vw;
+  display: block;
+  animation: animated 10s infinite ease;
+}
+.bubble:nth-child(3){
+  margin: 50vh 50vw;
+  display: block;
+  animation: animat 10s infinite ease;
+}
+@keyframes animate {
+  0%{margin: 20vh 20vw;}
+  20%{margin: 30vh 30vw}
+  40%{margin: 40vh 40vh;}
+  60%{margin: 20vh 60vw;}
+  80%{margin: 30vh 60vw;}
+  100%{margin: 20vh 20vw;}
+}
+@keyframes animated {
+  0%{margin: 20vh 20vw;}
+  20%{margin: 20vh 50vw;}
+  40%{margin: 30vh 30vw}
+  60%{margin: 20vh 60vw;}
+  80%{margin: 20vh 20vw;}
+  100%{margin: 30vh 30vw;}
+}
+@keyframes animat {
+  0%{margin: 30vh 20vw;}
+  20%{margin: 40vh 50vw;}
+  40%{margin: 30vh 30vw}
+  60%{margin: 40vh 20vw;}
+  80%{margin: 20vh 20vw;}
+  100%{margin: 40vh 40vw;}
+}
+.menu-left{
+    position: relative;
+}
+.profiles-left{
+    position: fixed;
+    bottom: 10px;
+    left: -7vw;
+    right: auto;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+   list-style-type: none;
+}
+.profile{
+    position: relative;
+    top: -3px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+    z-index: 99;
+  }
+  .profile:hover{
+    top: -5px;
+  }
+.mail{
+  text-decoration: none;
+  cursor: pointer;
+  writing-mode: vertical-rl;
+   font-size: 18px; 
+   font-weight: 800;
+   position: relative;
+   transition: all 0.8s ease;
+   color: antiquewhite;
+   z-index: 99;
+}
+.mail:hover{
+  font-size: 22px;
+  color: #749F82;
+}
+.profiles-right{
+    position: fixed;
+    bottom: -5px;
+    right: 2vw;
+    left: auto;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+   list-style-type: none;
+}
+.description{
+    position: absolute;
+    width: 50vw;
+    text-align: center;
+    margin: 10vh calc(50vw/2);
+}
+.sans{
+    text-align: center;
+    font-size: 32px;
+    font-family: sans-serif;
+}
+.serif{
+    text-align: center;
+    font-size: 56px;
+    font-family: serif;
+    text-transform: uppercase;
+}
+.btn {
+    color: #03e9f4;
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin: 40px 40px;
+    padding: 24px 30px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
+  
+  .btn:nth-child(1) {
+    filter: hue-rotate(290deg);
+  }
+  
+  .btn:nth-child(3) {
+    filter: hue-rotate(110deg);
+  }
+  .btn span {
+    display: block;
+    position: absolute;
+  }
+  
+  .btn span:nth-child(1) {
+    animation: animate1 1s linear infinite;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    height: 2px;
+    left: -100%;
+    top: 0;
+    width: 100%;
+  }
+  
+  @keyframes animate1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .btn span:nth-child(2) {
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    height: 100%;
+    top: -100%;
+    right: 0;
+    width: 2px;
+  }
+  
+  @keyframes animate2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+  .btn span:nth-child(3) {
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    bottom: 0;
+    height: 2px;
+    right: -100%;
+    width: 100%;
+  }
+  
+  @keyframes animate3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  .btn span:nth-child(4) {
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    bottom: -100%;
+    height: 100%;
+    left: 0;
+    width: 2px;
+  }
+  
+  @keyframes animate4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .bubble{
+      width: 150px;
+      height: 150px;
+    }
+    .description{
+      margin: 30vh calc(50vw/2);
+  }
+  .profiles-right{
+    display: none;
+  }
+  .sans{
+      font-size: 24px;
+  }
+  .serif{
+      font-size: 38px;
+  }
+  .bubble:nth-child(2){
+    margin: 10vh 40vw;
+    display: block;
+    animation: animated 10s infinite ease;
+  }
+  .bubble:nth-child(3){
+    margin: 40vh 40vw;
+    display: block;
+    animation: animat 10s infinite ease;
+  }
+  @keyframes animate {
+    0%{margin: 20vh 20vw;}
+    20%{margin: 30vh 30vw}
+    40%{margin: 40vh 40vh;}
+    60%{margin: 20vh 40vw;}
+    80%{margin: 30vh 40vw;}
+    100%{margin: 20vh 20vw;}
+  }
+  @keyframes animated {
+    0%{margin: 20vh 20vw;}
+    20%{margin: 20vh 40vw;}
+    40%{margin: 30vh 30vw}
+    60%{margin: 20vh 40vw;}
+    80%{margin: 20vh 20vw;}
+    100%{margin: 30vh 30vw;}
+  }
+  @keyframes animat {
+    0%{margin: 30vh 20vw;}
+    20%{margin: 40vh 40vw;}
+    40%{margin: 30vh 30vw}
+    60%{margin: 40vh 20vw;}
+    80%{margin: 20vh 20vw;}
+    100%{margin: 40vh 40vw;}
+  }
+
+  }
+  @media screen and (max-width: 700px) {
+      .profiles-left{
+        display: none;
+      }
+      .profiles-right{
+        display: none;
+      }
+      .bubble{
+        width: 100px;
+        height: 100px;
+      }
+      .description{
+        width: 70vw;
+        margin: 30vh calc(30vw/2);
+    }
+    .sans{
+        font-size: 22px;
+    }
+    .serif{
+        font-size: 28px;
+    }
+    .btn {
+      color: #03e9f4;
+      display: inline-block;
+      font-size: 20px;
+      letter-spacing: 4px;
+      margin: 80px 40px;
+      padding: 24px 30px;
+    }
+  }
+  
