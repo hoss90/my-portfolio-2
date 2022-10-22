@@ -1,14 +1,12 @@
 import "../Styles/Contact.css"
-import phone from "../Images/call.png"
-import location from "../Images/location.png"
 function Contact(){
     return(
         <div id="contact">
             <div className="left-contact">
                 <h1 className="title">Get In Touch</h1>
-                <img src="https://img.icons8.com/color/48/000000/apple-phone.png"/>
+                <img src="https://img.icons8.com/color/48/000000/apple-phone.png" alt="phone"/>
                 <span ><a href="tel:+21622999664" className="phone">+216 22 999 664 </a><br/><a href="tel:+26666492" className="phonee">+216 26 666 492 </a></span><br/><br/>
-                <img src="https://img.icons8.com/office/40/000000/worldwide-location.png"/>
+                <img src="https://img.icons8.com/office/40/000000/worldwide-location.png" alt="location"/>
                 <span className="location">Sfax, Tunisia</span>
             </div>
 <div id="form-div">
