@@ -8,9 +8,9 @@ function Home(){
             <div className="bubble"></div>
                 <div class="menu-left">
                 <ol class="profiles-left">
-                    <li><a class="profile" rel="noreferrer" href="https://www.instagram.com/houssem_janfaoui/" target="_blank"><img src="https://img.icons8.com/3d-fluency/40/000000/instagram-new.png"/></a></li>
-                    <li><a class="profile" rel="noreferrer" href="https://www.linkedin.com/in/houssem-janfaoui-a0b687103/" target="_blank"><img src="https://img.icons8.com/3d-fluency/40/000000/linkedin.png"/></a></li>
-                    <li><a class="profile" rel="noreferrer" href="https://github.com/hoss90" target="_blank"><img src="https://img.icons8.com/3d-fluency/40/000000/github.png"/></a></li>
+                    <li><a class="profile" rel="noreferrer" href="https://www.instagram.com/houssem_janfaoui/" target="_blank"><img src="https://img.icons8.com/3d-fluency/40/000000/instagram-new.png" alt="insta"/></a></li>
+                    <li><a class="profile" rel="noreferrer" href="https://www.linkedin.com/in/houssem-janfaoui-a0b687103/" target="_blank"><img src="https://img.icons8.com/3d-fluency/40/000000/linkedin.png" alt="linkedin"/></a></li>
+                    <li><a class="profile" rel="noreferrer" href="https://github.com/hoss90" target="_blank"><img src="https://img.icons8.com/3d-fluency/40/000000/github.png" alt="github"/></a></li>
                 </ol>
             </div>
             <div className="menu-right">
